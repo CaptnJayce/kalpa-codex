@@ -1,0 +1,123 @@
+---
+import type { GamesData } from '../types/games';
+import gamesData from '../data/games/games.json';
+const typedGamesData = gamesData as GamesData;
+---
+
+<body>
+    <div class="container">
+        <h1>Games:</h1>
+        <div class="section">
+            <h2>Completed:</h2>
+            <div class="game-list">
+                {typedGamesData.completed.map(game => (
+                    <div class="game-item completed">
+                        <h3>{game.title} - {game.planet}</h3>
+                        <p>{game.description}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Current:</h2>
+            <div class="game-list">
+                {typedGamesData.current.map(game => (
+                    <div class="game-item current">
+                        <div class="game-content">
+                            <img src={game.image} alt={game.title} class="game-image" />
+                            <div class="game-text">
+                                <h3>{game.title} - {game.planet}</h3>
+                                <p>{game.description}</p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Upcoming:</h2>
+            <div class="game-list">
+                {typedGamesData.upcoming.map(game => (
+                    <div class="game-item upcoming">
+                        <div class="game-content">
+                            <img src={game.image} alt={game.title} class="game-image" />
+                            <div class="game-text">
+                                <h3>{game.title} - {game.planet}</h3>
+                                <p>{game.description}</p>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        justify-content: left;
+        text-align: left;
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: #f8fafc;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .section {
+        margin-bottom: 2rem;
+    }
+
+    .section h2 {
+        color: #1f2937;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .game-list {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .game-item {
+        border: 1px solid #e0e0e0;
+        padding: 1rem;
+        border-radius: 12px;
+        background: #ffffff;
+        width: 500px;
+    }
+
+    .game-content {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .game-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .game-text {
+        flex: 1;
+    }
+
+    .game-item h3 {
+        margin: 0 0 0.5rem 0;
+        color: #1f2937;
+        font-size: 1.25rem;
+    }
+
+    .game-item p {
+        margin: 0;
+        color: #6b7280;
+    }
+</style>

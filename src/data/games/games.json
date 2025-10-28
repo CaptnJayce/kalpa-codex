@@ -1,0 +1,31 @@
+{
+  "completed": [],
+  "current": [
+    {
+      "title": "Dimentia",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "Several characters awaken on a strange planet, held hostage by the Mantle of Chaos. Enslaved for divine entertainment, they try to discover who they are and find an escape. If there even is one.",
+      "planet": "Dimentia"
+    }
+  ],
+  "upcoming": [
+    {
+      "title": "Parry The Floor",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "With fading memories and a voice that won't keep quiet, Perry heeds its plea to ascend the Trial of Agility and meet the Mantle of Karma.",
+      "planet": "Karmana"
+    },
+    {
+      "title": "Witch Way",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "After narrow failure of her Mage Examination, Cassie is destined to a life of labour to benefit the castes above her.",
+      "planet": "Seryph"
+    },
+    {
+      "title": "Spell Hunter",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "The Spell Hunter. The near height of the caste system on Seryph. A life full of exploration and discovery at the behest of the Mantle of Fabryka.",
+      "planet": "Seryph"
+    }
+  ]
+}
