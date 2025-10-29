@@ -3,29 +3,40 @@
     {
       "title": "Kala",
       "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
-      "description": "The Origin Planet where the Mantles first created Human life."
+      "description": "A planet of several Mantles. The Origin Planet where the Mantles first created Human life.",
+      "quote": ""
     },
     {
       "title": "Constella",
       "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
-      "description": "A Cyberpunk planet - home of Tachyon and the Mantle of Abundance."
+      "description": "A Cyberpunk haven. Thanks to the 'Abundancy points' dotted across the planet, they have unlimited and direct access to every resource within Kalpa.",
+      "quote": ""
+    },
+    {
+      "title": "Seryph",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "A Fabryka rich, caste-oriented, society. The people spend their entire youth studying and practicing for their Mage Exam.",
+      "quote": "Within a falsehood caste. Fate wreathed in award. You cannot be its Hunter. But you can be its Sword."
     },
     {
       "title": "Perpetua",
       "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
-      "description": "A steampunk pirate planet. Arguably the most peaceful planet in Kalpa, home to the Orchid's and the Mantle of Logic."
+      "description": "A steampunk-pirate planet. Arguably the most peaceful planet in Kalpa, home to the Orchid's and the Mantle of Logic.",
+      "quote": "You lack turmoil to befit privilege. You have not faced fear. The shoulders of benevolence are not eternal. And reason will not hold you dear."
     }
   ],
   "secondary": [
     {
       "title": "Isotope",
       "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
-      "description": "The only planet in Kalpa where life evolved naturally."
+      "description": "The only planet in Kalpa where life evolved naturally. A radiation-stricken landscape, a product of their greatest achievements.",
+      "quote": ""
     },
     {
       "title": "Karmana",
       "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
-      "description": "A mostly snowy and frozen planet where life is incredibly harsh."
+      "description": "Home of the Mantle of Karma. Known for it's brutal trials that are rewarded with wishes from the Mantle himself.",
+      "quote": ""
     }
   ]
 }
