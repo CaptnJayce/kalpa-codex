@@ -1,0 +1,125 @@
+---
+import type { PlanetsData } from '../types/planets';
+import planetsData from '../data/planets.json';
+const typedPlanetsData = planetsData as PlanetsData;
+---
+
+<body>
+    <div class="container">
+        <h1 class="title">Planets</h1>
+        <div class="sections-wrapper">
+            <div class="section">
+                <h2>Main:</h2>
+                <div class="planet-list">
+                    {typedPlanetsData.primary.map(p => (
+                        <div class="planet-item current">
+                            <div class="planet-content">
+                                <img src={p.image} alt={p.title} class="planet-image" />
+                                <div class="planet-text">
+                                    <h3>{p.title}</h3>
+                                    <p>{p.description}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 style="text-align: right;">Secondary:</h2>
+                <div class="planet-list" style="justify-content: right;">
+                    {typedPlanetsData.secondary.map(p => (
+                        <div class="planet-item current">
+                            <div class="planet-content">
+                                <img src={p.image} alt={p.title} class="planet-image" />
+                                <div class="planet-text">
+                                    <h3>{p.title}</h3>
+                                    <p>{p.description}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        justify-content: left;
+        text-align: left;
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: #f8fafc;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .sections-wrapper {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .section {
+        margin-bottom: 2rem;
+        width: 50%;
+    }
+
+    .section h2 {
+        color: #1f2937;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .planet-list {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .planet-item {
+        border: 1px solid #e0e0e0;
+        padding: 1rem;
+        border-radius: 12px;
+        background: #ffffff;
+        width: 400px;
+        height: 500px;
+    }
+
+    .planet-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .planet-image {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .planet-text {
+        flex: 1;
+    }
+
+    .planet-item h3 {
+        margin: 0 0 0.5rem 0;
+        color: #1f2937;
+        font-size: 1.25rem;
+    }
+
+    .planet-item p {
+        margin: 0;
+        color: #6b7280;
+    }
+</style>

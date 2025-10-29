@@ -1,12 +1,12 @@
 ---
 import type { GamesData } from '../types/games';
-import gamesData from '../data/games/games.json';
+import gamesData from '../data/games.json';
 const typedGamesData = gamesData as GamesData;
 ---
 
 <body>
     <div class="container">
-        <h1>Games:</h1>
+        <h1 class="title">Games</h1>
         <div class="section">
             <h2>Completed:</h2>
             <div class="game-list">
@@ -64,6 +64,10 @@ const typedGamesData = gamesData as GamesData;
         background: #f8fafc;
     }
 
+    .title {
+        text-align: center;
+    }
+
     .container {
         max-width: 90%;
         margin: 0 auto;
@@ -80,10 +84,10 @@ const typedGamesData = gamesData as GamesData;
     }
 
     .game-list {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         gap: 1.5rem;
-        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .game-item {
@@ -91,7 +95,6 @@ const typedGamesData = gamesData as GamesData;
         padding: 1rem;
         border-radius: 12px;
         background: #ffffff;
-        width: 500px;
     }
 
     .game-content {

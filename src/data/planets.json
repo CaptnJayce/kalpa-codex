@@ -1,0 +1,31 @@
+{
+  "primary": [
+    {
+      "title": "Kala",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "The Origin Planet where the Mantles first created Human life."
+    },
+    {
+      "title": "Constella",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "A Cyberpunk planet - home of Tachyon and the Mantle of Abundance."
+    },
+    {
+      "title": "Perpetua",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "A steampunk pirate planet. Arguably the most peaceful planet in Kalpa, home to the Orchid's and the Mantle of Logic."
+    }
+  ],
+  "secondary": [
+    {
+      "title": "Isotope",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "The only planet in Kalpa where life evolved naturally."
+    },
+    {
+      "title": "Karmana",
+      "image": "https://pbs.twimg.com/media/GzM-6cEW4AAyoLu?format=jpg&name=large",
+      "description": "A mostly snowy and frozen planet where life is incredibly harsh."
+    }
+  ]
+}
